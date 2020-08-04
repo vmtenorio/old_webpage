@@ -217,3 +217,27 @@ p {
     margin:0 !important;
   }
 }
+
+/* Divider bar */
+
+.height-100px {
+  height: 100px;
+}
+
+.divider-line {
+  border-top: 3px solid #8c8b8b;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.divider-line:after {
+  content: "♦";
+  display: inline-block;
+	position: relative;
+  top: -27px;
+  background: #cecfef;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
