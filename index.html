@@ -252,11 +252,53 @@
     <div class="collapse w-75 mx-auto" id="pamCollapse">
       <div class="card card-body m-3 skill-description">
         <h3 class="card-title text-center">PAM Tools</h3>
-        <p>Even when my department was focused on IAM, we also had some Privileged Account Management projects, and that is where I started in my first day at Deloitte. In the end, I did more PAM projects than IAM projects, involving implementation work for tools like CyberArk (for which I am a certified Defender and Sentry), BeyondTrust or Thycotic. I have a deep understanding of how privileged accounts should be managed, how the structure for them should be and what are the best practices to keep the infrastructure safe. Also in some of these projects in my senior years, I'm in the head of the implementation team, which also grants me leadership and management skills.</p>
+        <p>Even if my department was mostly focused on IAM, we also had some Privileged Account Management projects, and that is where I started in my first day at Deloitte. In the end, I did more PAM projects than IAM projects, involving implementation work for tools like CyberArk (for which I am a certified Defender and Sentry), BeyondTrust or Thycotic. I have a deep understanding of how privileged accounts should be managed, how the structure for them should be and what are the best practices to keep the infrastructure safe. Also in some of these projects in my senior years, I'm in the head of the implementation team, which also grants me leadership and management skills.</p>
       </div>
     </div>
   </div>
 
+  <div id="publications" class="background-blue">
+    <div id="publicationsRef" class="height-5vh"></div>
+    <div class="container-fluid text-center w-100">
+      <h1 class="text-uppercase">Publications</h1>
+    </div>
+    <div class="w-75 mx-auto" id="pubAccordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#publication1" aria-expanded="true" aria-controls="collapseOne">
+            <h4 class="mb-0">
+              Deep Encoder-Decoder Architectures for Graph Output Signals
+            </h4>
+          </button>
+          <h5 class="ml-4">S. Rey, V. Tenorio, S. Rozada, L. Martino, and A. G. Marques</h5>
+          <h6 class="ml-4">Proceedings of 53rd Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, CA, Nov 2019</h6>
+        </div>
+        <div id="publication1" class="collapse" aria-labelledby="headingOne" data-parent="#pubAccordion">
+          <div class="card-body">
+            Neural networks (NNs) and graph signal processing have emerged as important actors in data-science applications dealing with complex (non-linear, non-Euclidean) datasets. In this work, we introduce a novel graph-aware NN architecture to learn the mapping between graph signals that are defined on two different graph datasets. The novel proposed architecture is based on two NNs and a common latent space. In particular, we consider an underparametrized graph-aware NN encoder that maps the input graph signal to a latent space, followed by an underparametrized graph-aware NN decoder which maps the latent representation to the output graph signal. The parameters of the two NN are jointly learned by using a training set and the back-propagation algorithm. The resulting architecture can then be viewed as an underparametrized graph-aware encoder/decoder NN operating over two different graphs. The proposed scheme outperforms the corresponding benchmark NN architectures in the literature.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#publication2" aria-expanded="false" aria-controls="collapseTwo">
+            <h4 class="mb-0">
+              Overparametrized Deep Encoder-Decoder Architectures for Inputs and Outputs Defined over Graphs
+            </h4>
+          </button>
+          <h5 class="ml-4">S. Rey, V. Tenorio, S. Rozada, L. Martino, and A. G. Marques</h5>
+          <h6 class="ml-4">Proceedings of European Signal Processing Conference, Amsterdam, The Netherlands, 2020</h6>
+        </div>
+        <div id="publication2" class="collapse" aria-labelledby="headingTwo" data-parent="#pubAccordion">
+          <div class="card-body">
+            There is a growing interest in the joint application of graph signal processing and neural networks (NNs) for learning problems involving complex, non-linear and/or non-Euclidean datasets. This paper proposes an overparametrized graph-aware NN architecture able to represent a non-linear mapping between two graph signals, each defined on a different graph. The considered architecture is based on two NNs and a common latent space. Specifically, we consider an overparametrized graph-aware NN encoder which maps the input graph signal to a latent space, followed by an overparametrized graph-aware NN decoder that transforms the latent representation to the output graph signal. The parameters of the two NNs are jointly tuned by applying the back-propagation algorithm with an early stopping procedure to prevent overfitting. The overall architecture can be interpreted as an overparametrized graph-aware encoder/decoder NN operating over two different graphs. A key element in the encoder (decoding) scheme is the consideration of a nested collection of parametric graph-aware (down-) up-sampling operators, whose design will be studied in detail. We show by numerical simulations that the proposed scheme outperforms the corresponding benchmark NN architectures, previously introduced in the literature.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="height-100px background-blue pt-5">
+    <hr class="divider-line"></hr>
   </div>
 
   <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 90vh;">
