@@ -56,6 +56,31 @@ var chartConfig = {
   }
 };
 
+var chart;
+var inView = false;
+
+function isScrolledIntoScreen(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewHalf = docViewTop + (3 * $(window).height() / 4);
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewHalf) && (elemBottom >= docViewTop));
+}
+
+$(window).scroll(function() {
+    if (isScrolledIntoScreen('#skill-chart')) {
+        if (inView) { return; }
+        inView = true;
+        chart = new Chart(ctx, chartConfig);
+    } else {
+        inView = false;  
+    }
+});
+
 var chart = new Chart(ctx, chartConfig);
 var lastElement;
 
