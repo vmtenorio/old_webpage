@@ -241,3 +241,15 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+/* Contact form */
+#formDiv {
+  border-radius: 15px;
+}
+
+.form-control {
+  border: 0px !important;
+  border-bottom: 2px solid #ced4da !important;
+  border-radius: 0px !important;
+}
