@@ -53,6 +53,8 @@ var chartConfig = {
       }
     },
     onClick: handleClick,
+    responsive: true,
+    maintainAspectRatio: true,
   }
 };
 
@@ -62,13 +64,12 @@ var inView = false;
 function isScrolledIntoScreen(elem)
 {
     var docViewTop = $(window).scrollTop();
-    var docViewHalf = docViewTop + (3 * $(window).height() / 4);
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
 
-    return ((elemTop <= docViewHalf) && (elemBottom >= docViewTop));
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
 }
 
 $(window).scroll(function() {
@@ -77,6 +78,7 @@ $(window).scroll(function() {
         inView = true;
         chart = new Chart(ctx, chartConfig);
     } else {
+        chart.destroy();
         inView = false;  
     }
 });
