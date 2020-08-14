@@ -21,7 +21,7 @@ p {
 }
 
 #cover {
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .navbar {
@@ -43,8 +43,10 @@ p {
   border-width: 10px;
 }
 
-.border-5-left {
-  border-left: 5px solid white !important
+@media (min-width: 768px) {
+  .border-5-left {
+    border-left: 5px solid white !important;
+  }
 }
 
 .icon-white {
