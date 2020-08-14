@@ -1,5 +1,4 @@
 
-
 * {
   font-family: 'Rowdies', cursive;
 }
@@ -186,14 +185,14 @@ p {
   .timeline::after {
   left: 31px;
   }
-  
+
   /* Full-width containers */
   .tl-item {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .tl-item-left::before, .tl-item-right::before {
   left: 62px;
@@ -209,12 +208,12 @@ p {
     height: 50px;
     width: 50px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .tl-item-right {
   left: 0;
   }
-  
+
   .tl-item-content {
     margin:0 !important;
   }
@@ -236,7 +235,7 @@ p {
 .divider-line:after {
   content: "♦";
   display: inline-block;
-	position: relative;
+  position: relative;
   top: -27px;
   background: #cecfef;
   font-size: 30px;
