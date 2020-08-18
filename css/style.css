@@ -254,3 +254,12 @@ p {
   border-bottom: 2px solid #ced4da !important;
   border-radius: 0px !important;
 }
+
+
+/* Footer */
+
+#footer {
+  border-top: 3px solid white;
+  font-family: 'Rowdies', cursive;
+}
+
