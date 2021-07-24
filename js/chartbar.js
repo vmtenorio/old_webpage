@@ -78,7 +78,7 @@ $(window).scroll(function() {
         inView = true;
         chart = new Chart(ctx, chartConfig);
     } else {
-        chart.destroy();
+        // chart.destroy();
         inView = false;  
     }
 });
